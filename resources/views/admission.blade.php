@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPTI - Tedja Indonesia</title>
+    <title>Admission - Tedja Indonesia</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         .ripple {
             position: relative;
@@ -37,10 +38,10 @@
     {{-- Navbar --}}
     @include('layouts.navbar')
 
-    {{-- Hero Section Slider --}}
-    <section class="relative w-full h-[80vh] mt-32 overflow-hidden">
-    <!-- Slide 1 -->
-    <div class="absolute inset-0 transition-opacity duration-1000 opacity-100 slide">
+{{-- Hero Section Slider --}}
+<section class="relative w-full h-[80vh] mt-32 overflow-hidden">
+    <!-- Slide 1 (klik ke link) -->
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-100 slide z-10">
         <a href="https://ais.ipti.ac.id/spmbfront/" target="_blank">
             <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/05/banner-website-revisi-scaled.png"
                  alt="Slide 1" class="w-full h-full object-cover cursor-pointer">
@@ -48,157 +49,84 @@
     </div>
 
     <!-- Slide 2 -->
-        <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
             <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-20-at-10.41.01_a5aba900-scaled.jpg"
-                 alt="Slide 2" class="w-full h-full object-cover">
-        </div>
+                 alt="Slide 2" class="w-full h-full object-cover cursor-pointer">
+    </div>
 
     <!-- Slide 3 -->
-        <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
             <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-20-at-10.41.01_72dd9cbd-scaled.jpg"
-                 alt="Slide 3" class="w-full h-full object-cover">
-        </div>
-
-        {{-- Tombol navigasi --}}
-        <button id="prevBtn" class="absolute left-5 top-1/2 -translate-y-1/2 bg-black/40 text-white rounded-full p-3 hover:bg-black/60">
-            &#10094;
-        </button>
-        <button id="nextBtn" class="absolute right-5 top-1/2 -translate-y-1/2 bg-black/40 text-white rounded-full p-3 hover:bg-black/60">
-            &#10095;
-        </button>
-    </section>
-
-
-    <section class="con-inner max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-
-    {{-- Kiri: 2 Gambar --}}
-    <div class="grid grid-cols-2 gap-4">
-        <div>
-            <img
-                src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0299-1152x1536.jpg"
-                alt="Gedung 1"
-                class="rounded-lg shadow-lg w-[1152] h-[55vh] object-cover"
-            >
-        </div>
-        <div>
-            <img
-                src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0272-1536x1152.jpg"
-                alt="Gedung 2"
-                class="rounded-lg shadow-lg w-[1536] h-[1152] object-cover"
-            >
-        </div>
+                 alt="Slide 3" class="w-full h-full object-cover cursor-pointer">
     </div>
 
-    {{-- Kanan: Teks --}}
-    <div>
-        <h1 class="text-3xl font-bold text-gray-900 mb-4">
-            Tedja Indonesia <br>
-            <span class="text-blue-900">Future of Tourism and Hospitality</span>
-        </h1>
-        <p class="text-gray-700 mb-4">
-            Imagine graduating with excellent skills and mastering the art of tourism and hospitality?</p>
-        <p class="text-gray-700 mb-6">
-            Tedja Indonesia turn this vision into a reality. Our curriculum and advanced facilities are designed to align with global standards. Combining theoretical knowledge with practical experience through project based learning and industry internships.</p>
-        <p class="text-gray-700">
-            At Tedja Indonesia, we don’t just teach, we prepare you to become a key player in the global tourism and hospitality industry.</p>
-    </div>
-</section>
-
-<section class="max-w-7xl mx-auto px-6 py-12">
-    <!-- Judul -->
-    <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold text-gray-900">Explore Our Programs</h2>
-        <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
-            At TEDJA Indonesia, we take pride in offering quality undergraduate programs that cater to a range of interests.
-            Our courses are designed to equip you with the knowledge and skills to thrive in your field.
-            Whether you are aiming for personal development or career advancement, we have something for you.
-        </p>
-    </div>
-
-    <!-- Grid Program -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Tourism -->
-        <div>
-            <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/Borobudur-temple-36-1365x2048.jpg"
-                 alt="Tourism"
-                 class="w-full h-56 object-cover rounded-lg shadow-md mb-4">
-            <h3 class="text-xl font-bold text-gray-900">Tourism</h3>
-            <p class="text-gray-600 mt-2">
-                The Tourism program learning through diverse cultures, digital marketing in tourism,
-                and tourism event design while gaining expertise in ecotourism and sustainable tourism.
-            </p>
-            <a href="#" class="mt-3 inline-block text-blue-900 font-medium hover:underline">
-                Explore Course →
-            </a>
-        </div>
-
-        <!-- Public Relations -->
-        <div>
-            <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/Borobudur-temple-41-1365x2048.jpg"
-                 alt="Public Relations"
-                 class="w-full h-56 object-cover rounded-lg shadow-md mb-4">
-            <h3 class="text-xl font-bold text-gray-900">Public Relations</h3>
-            <p class="text-gray-600 mt-2">
-                PR Hospitality & Tourism foster a competence in media handling & production,
-                corporate communication, and digital marketing in hospitality and tourism sectors.
-            </p>
-            <a href="#" class="mt-3 inline-block text-blue-900 font-medium hover:underline">
-                Explore Course →
-            </a>
-        </div>
-
-        <!-- Digital Business -->
-        <div>
-            <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/DSC07987.jpg"
-                 alt="Digital Business"
-                 class="w-full h-56 object-cover rounded-lg shadow-md mb-4">
-            <h3 class="text-xl font-bold text-gray-900">Digital Business</h3>
-            <p class="text-gray-600 mt-2">
-                This program integrates technology with business tourism, equipping students to thrive in Smart Tourism.
-            </p>
-            <a href="#" class="mt-3 inline-block text-blue-900 font-medium hover:underline">
-                Explore Course →
-            </a>
-        </div>
-
-        <!-- Hospitality -->
-        <div>
-            <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/Borobudur-temple-51-1536x1024.jpg"
-                 alt="Hospitality"
-                 class="w-full h-56 object-cover rounded-lg shadow-md mb-4">
-            <h3 class="text-xl font-bold text-gray-900">Hospitality</h3>
-            <p class="text-gray-600 mt-2">
-                Prepare for a dynamic career in the hospitality industry with hands-on learning, professional training,
-                and real-world experience in hotel and service management.
-            </p>
-            <a href="#" class="mt-3 inline-block text-blue-900 font-medium hover:underline">
-                Explore Course →
-            </a>
-        </div>
-    </div>
+    {{-- Tombol navigasi --}}
+    <button id="prevBtn" class="absolute left-5 top-1/2 -translate-y-1/2 bg-black/40 text-white rounded-full p-3 hover:bg-black/60 z-20">
+        &#10094;
+    </button>
+    <button id="nextBtn" class="absolute right-5 top-1/2 -translate-y-1/2 bg-black/40 text-white rounded-full p-3 hover:bg-black/60 z-20">
+        &#10095;
+    </button>
 </section>
 
 
-<!-- Why Choose Section -->
-<section class="relative bg-cover bg-center bg-no-repeat py-20 text-white"
-         style="background-image: url('https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/hall4.jpg');">
-  <div class="bg-black/50 absolute inset-0"></div> <!-- Overlay gelap -->
+     {{-- Hero Section --}}
+    <section class="relative bg-cover bg-center bg-no-repeat h-[60vh] max-w-6xl mx-auto flex items-center overflow-hidden mt-20 mb-20"         style="background-image: url('https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0251-1536x1152.jpg'); background-size: cover; background-position: center;">
+     <!-- Overlay gelap -->
+     <div class="absolute inset-0 bg-black/50"></div>
 
-  <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
-    <h2 class="text-3xl font-bold mb-6">Why Choose Tedja Indonesia?</h2>
-    <p class="text-lg leading-relaxed mb-8">
-      Tedja Indonesia prepares future leaders in tourism and hospitality with an international-standard curriculum delivered in English.
-      We provide students with global career opportunities, including international internships and conferences, ensuring they stand out in a competitive industry.
-      Our advanced facilities, industry-aligned curriculum, and exclusive partnerships create the perfect place for local and international students to thrive.
+     <!-- Content tengah -->
+    <div class="relative z-10 max-w-2xl mx-auto text-center text-white">
+    <h1 class="text-4xl md:text-5xl font-semibold text-center text-white leading-tight mb-4">
+        Start Your Application Today
+    </h1>
+    <p class="text-white text-lg mb-6">
+        Discover a range of courses designed to equip you with essential skills
+        for success in tourism and hospitality.
     </p>
-    <a href="#enroll" class="bg-blue-900 px-6 py-3 rounded-lg text-white font-semibold shadow-md hover:bg-blue-800 transition">
-      Enroll Today!
-    </a>
-  </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe9Wmo5PdxgUiVibD9zE4oGNhFAJmGN-7kLncfzTsNo1SPRLg/viewform"
+     class="border-2 border-white-600 text-white-600 px-6 py-3 rounded-md shadow-md
+          hover:bg-blue-100 hover:text-white transition duration-300">
+     Get Started
+            </a>
+            </div>
+            </section>3
+        <section class="max-w-5xl mx-auto px-6 py-2 text-center">
+                <h2 class="font-poppins text-[80px] font-semibold normal-case not-italic leading-[70px] tracking-[0px] text-black no-underline">Tuition Fee</h2>
+                <p class="text-black-600 text-[18px] max-w-2xl mx-auto mb-12 py-3">
+                    Welcome to the tuition fee guide for this academic year. <br> Here, you’ll find everything you need to know—like how much <br>
+                    the fees are, when to pay, and the ways you can make your <br> payment.
+                </p>
+
+
+        <section class="flex flex-col items-center text-center px-4 py-8 bg-white">
+        <!-- Gambar -->
+        <div class="w-full max-w-4xl">
+            <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/09/Study-Fee-2025-2026-Update-1448x2048.png" alt="Tuition Fee Table" class="w-full h-auto rounded-lg shadow-md" />
+        </div>
+        </section>
+
+        <section class="flex flex-col items-center justify-center text-center py-12 bg-white relative">
+
+        <!-- Judul -->
+        <h2 class="text-[50px] md:text-[60px] font-extrabold text-black max-w-3xl leading-tight relative z-10">
+            Can’t Decide Which Program Is Right For You?
+        </h2>
+
+        <!-- Tombol -->
+        <div class="mt-8 relative z-10 py-8">
+            <a href="https://api.whatsapp.com/send/?phone=6281111816036&text=Hello%2C+I+want+to+know+more+about+IPTI&type=phone_number&app_absent=0" target="_blank"
+                class="px-8 py-3 rounded-full border border-blue-900 text-blue-900 font-semibold hover:bg-blue-900 hover:text-white transition">
+                    CHAT US NOW !
+            </a>
+        </div>
+    </section>
 </section>
+
+
 
 <!-- Footer -->
-<footer class="bg-white border-t border-gray-200 py-12">
+<footer class="bg-white border-t border-gray-200 px-10 py-12">
   <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
 
     <!-- Logo & Description -->
@@ -247,16 +175,29 @@
     </div>
 
     <!-- Contact -->
-    <div>
-      <h4 class="text-xl font-bold text-gray-900 mb-4">Get In Touch</h4>
-      <p class="text-gray-600 mb-2">Email : info@ipti.ac.id</p>
-      <p class="text-gray-600 mb-2">Phone : +62 811-1181-6036</p>
-    </div>
+      <div>
+  <h4 class="text-xl font-bold text-gray-900 mb-4">Get In Touch</h4>
+
+  <!-- Email -->
+  <p class="text-gray-600 mb-2 flex items-center space-x-2">
+    <i class="fa-regular fa-envelope text-[ #324A6D] text-lg" style="color: #324A6D;"></i>
+    <span>Email: info@ipti.ac.id</span>
+  </p>
+
+  <!-- Phone -->
+  <p class="text-gray-600 mb-2 flex items-center space-x-2">
+    <i class="fa-brands fa-whatsapp text-lg" style="color: #324A6D;"></i>
+    <span>WhatsApp: +62 811-1181-6036</span>
+  </p>
+
+
+  </div>
   </div>
 </footer>
 
 
-    <script>
+
+     <script>
         const slides = document.querySelectorAll('.slide');
         let current = 0;
         const total = slides.length;
@@ -288,5 +229,8 @@
         }, 5000);
     </script>
 
+
 </body>
 </html>
+
+
