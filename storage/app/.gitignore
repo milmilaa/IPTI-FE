@@ -1,4 +1,5 @@
 *
 !private/
-!public/
+!public/videos/*.mp4
 !.gitignore
+
