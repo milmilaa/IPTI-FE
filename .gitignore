@@ -21,3 +21,6 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+/public/videos/About.mp4
+/public/videos/about.mp4
+

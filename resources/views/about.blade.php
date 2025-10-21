@@ -17,7 +17,7 @@
 <section id="about-us" class="relative w-full h-screen overflow-hidden">
   <!-- Video Background -->
   <video id="aboutVideo" autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
-    <source src="{{ asset('videos/about.mp4') }}" type="video/mp4">
+    <source src="https://drive.google.com/uc?export=download&id=162AlwqGppgVWXsc1DeUcp7kp1vfgjqsE" type="video/mp4">
     Browser Anda tidak mendukung tag video.
   </video>
 
@@ -30,6 +30,7 @@
     🔇 <span>Unmute</span>
   </button>
 </section>
+
 
 <script>
   const video = document.getElementById('aboutVideo');
