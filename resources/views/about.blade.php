@@ -15,16 +15,16 @@
 
     {{-- About Us Section --}}
 <section id="about-us" class="relative w-full h-screen overflow-hidden">
-  <!-- Video Background -->
+   {{-- Video Background --}}
   <video id="aboutVideo" autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
     <source src="https://drive.google.com/uc?export=download&id=162AlwqGppgVWXsc1DeUcp7kp1vfgjqsE" type="video/mp4">
     Browser Anda tidak mendukung tag video.
   </video>
 
-  <!-- Overlay hitam transparan -->
+   {{-- Overlay Hitam Transparan --}}
   <div class="absolute inset-0 bg-black/10"></div>
 
-  <!-- Tombol Unmute -->
+   {{-- Unmute tombol --}}
   <button id="unmuteBtn"
     class="absolute bottom-6 right-6 bg-white/60 backdrop-blur-md text-black px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2 shadow-md hover:bg-white/80 transition-all duration-300">
     🔇 <span>Unmute</span>
@@ -54,7 +54,7 @@
   <!-- Sub Judul -->
   <h4 class="text-lg text-gray-600 pl-10 mb-2">Our Journey</h4>
 
-  <!-- Judul Utama -->
+   {{-- Judul Utama --}}
   <h2 class="text-3xl md:text-4xl pl-10 font-bold text-gray-900 mb-6">
     Milestones in TEDJA Indonesia's Growth
   </h2>

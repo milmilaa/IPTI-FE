@@ -238,6 +238,7 @@
                 <p class="text-gray-600 mb-2">Phone : +62 811-1181-6036</p>
             </div>
         </div>
+        
     </footer>
 
 
