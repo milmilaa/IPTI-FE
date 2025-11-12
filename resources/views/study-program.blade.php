@@ -95,7 +95,7 @@
         <div class="p-5">
             <h3 class="text-xl font-bold mb-3">${p.name}</h3>
             <p class="text-slate-900 text-sm">${p.description}</p>
-            <a href="${p.link}" class="text-slate-950 font-sm mt-3 inline-block hover:underline">
+            <a href="{{ url('/study-progam/detail') }}" class="text-slate-950 font-sm mt-3 inline-block hover:underline">
             Explore Course &gt;
             </a>
         </div>

@@ -62,22 +62,22 @@
           <span class="transition group-hover:text-orange-500 border-none">{{ $menu['name'] }}</span>
         </a>
 
-        {{-- STUDY MENU --}}
+        {{-- === STUDY MENU === --}}
         @if ($menu['name'] === 'Study')
         <div
-          class="mega-menu absolute left-1/2 transform -translate-x-1/2 top-full mt-5 w-[1150px] bg-[#f9f9f9] shadow-2xl overflow-hidden z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out border-none"
+          class="mega-menu absolute left-1/2 transform -translate-x-1/2 top-full mt-5 w-[1150px]
+                 bg-[#f9f9f9] shadow-2xl overflow-hidden z-50 opacity-0 invisible 
+                 group-hover:opacity-100 group-hover:visible group-hover:translate-y-2
+                 transition-all duration-500 ease-out border-none"
         >
           <div class="grid grid-cols-4 gap-10 px-12 py-10 text-gray-800 border-none">
             {{-- Scholarships --}}
             <div class="border-none">
               <h3 class="text-2xl font-bold text-slate-900 mb-3">Scholarships</h3>
-              <img
-                src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0233-1152x1536.jpg"
-                alt="Scholarships"
-                class="mb-3 w-full h-44 object-cover border-none"
-              />
+              <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0233-1152x1536.jpg"
+                alt="Scholarships" class="mb-3 w-full h-44 object-cover border-none transition transform hover:scale-105 duration-300"/>
               <p class="text-xs leading-relaxed text-gray-700 mb-3">
-                Empowering students through financial support to achieve their academic goals. Apply now and take the next step toward your future!
+                Empowering students through financial support to achieve their academic goals.
               </p>
               <p class="font-semibold text-gray-800">Scholarships & Financial Aid</p>
             </div>
@@ -105,13 +105,10 @@
             {{-- Facility --}}
             <div class="border-none">
               <h3 class="text-xl font-bold text-slate-900 mb-3">World Class Facility</h3>
-              <img
-                src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0211-1152x1536.jpg"
-                alt="Facility"
-                class="mb-3 w-full h-44 object-cover border-none"
-              />
+              <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0211-1152x1536.jpg"
+                alt="Facility" class="mb-3 w-full h-44 object-cover border-none transition transform hover:scale-105 duration-300"/>
               <p class="text-xs leading-relaxed text-gray-700 mb-3">
-                Experience top-tier learning environments designed to inspire innovation, excellence, and global standards.
+                Experience top-tier learning environments designed to inspire innovation.
               </p>
               <p class="font-semibold text-gray-800">Room Mock-Up Laboratory</p>
             </div>
@@ -119,103 +116,73 @@
         </div>
         @endif
 
-        {{-- FACILITY MENU --}}
+        {{-- === FACILITY MENU === --}}
         @if ($menu['name'] === 'Facility')
         <div
-          class="mega-menu absolute left-1/2 transform -translate-x-1/2 top-full mt-5 w-[1150px] bg-[#f9f9f9] shadow-2xl overflow-hidden z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out border-none"
+          class="mega-menu absolute left-1/2 transform -translate-x-1/2 top-full mt-5 w-[1150px]
+                 bg-[#f9f9f9] shadow-2xl overflow-hidden z-50 opacity-0 invisible 
+                 group-hover:opacity-100 group-hover:visible group-hover:translate-y-2
+                 transition-all duration-500 ease-out border-none"
         >
           <div class="grid grid-cols-3 gap-10 px-12 py-10 text-gray-800 border-none">
-            {{-- Dormitory --}}
             <div class="border-none">
               <h3 class="text-2xl font-bold text-slate-900 mb-3">Dormitory</h3>
-              <img
-                src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0299-1152x1536.jpg"
-                alt="Dormitory"
-                class="mb-3 w-full h-44 object-cover border-none"
-              />
-              <p class="text-xs leading-relaxed text-gray-700 mb-3">
-                Safe, comfortable, and convenient housing—your home away from home on campus.
-              </p>
-              <p class="font-semibold text-gray-800">Student Dormitory at Tedja Indonesia</p>
+              <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0299-1152x1536.jpg"
+                alt="Dormitory" class="mb-3 w-full h-44 object-cover border-none transition transform hover:scale-105 duration-300"/>
+              <p class="text-xs leading-relaxed text-gray-700 mb-3">Safe, comfortable housing for students.</p>
             </div>
 
-            {{-- Learning Environment --}}
             <div class="border-none">
               <h3 class="text-xl font-bold text-slate-900 mb-3">Learning Environment</h3>
-              <ul class="space-y-2 text-xs font-medium text-gray-700 border-none">
-                <li><a href="#" class="hover:text-orange-500 transition border-none">Classroom Facilities</a></li>
-                <li><a href="#" class="hover:text-orange-500 transition border-none">Laboratory Rooms</a></li>
-                <li><a href="#" class="hover:text-orange-500 transition border-none">Multimedia Studio</a></li>
-                <li><a href="#" class="hover:text-orange-500 transition border-none">Library & Study Area</a></li>
+              <ul class="space-y-2 text-xs font-medium text-gray-700">
+                <li><a href="#" class="hover:text-orange-500">Classroom Facilities</a></li>
+                <li><a href="#" class="hover:text-orange-500">Laboratory Rooms</a></li>
+                <li><a href="#" class="hover:text-orange-500">Multimedia Studio</a></li>
               </ul>
             </div>
 
-            {{-- Gym and Gaming Room --}}
             <div class="border-none">
-              <h3 class="text-xl font-bold text-slate-900 mb-3">Comfortable Space for Students</h3>
-              <img
-                src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0259-1152x1536.jpg"
-                alt="Gym and Gaming Room"
-                class="mb-3 w-full h-44 object-cover border-none"
-              />
-              <p class="text-xs leading-relaxed text-gray-700 mb-3">
-                Relax, study, and connect in cozy, student-friendly environments designed for your well-being.
-              </p>
-              <p class="font-semibold text-gray-800">GYM and Gaming Room</p>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Comfortable Space</h3>
+              <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0259-1152x1536.jpg"
+                alt="Gym and Gaming Room" class="mb-3 w-full h-44 object-cover border-none transition transform hover:scale-105 duration-300"/>
+              <p class="text-xs text-gray-700">Relax and connect in cozy, student-friendly areas.</p>
             </div>
           </div>
         </div>
         @endif
 
-        {{-- ADMISSION MENU --}}
-@if ($menu['name'] === 'Admission')
-<div
-  class="mega-menu absolute left-1/2 transform -translate-x-1/2 top-full mt-5 w-[1150px] bg-[#f9f9f9] shadow-2xl overflow-hidden z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out border-none"
->
-  <div class="grid grid-cols-3 gap-10 px-12 py-10 text-gray-800 border-none">
+        {{-- === ADMISSION MENU === --}}
+        @if ($menu['name'] === 'Admission')
+        <div
+          class="mega-menu absolute left-1/2 transform -translate-x-1/2 top-full mt-5 w-[1150px]
+                 bg-[#f9f9f9] shadow-2xl overflow-hidden z-50 opacity-0 invisible 
+                 group-hover:opacity-100 group-hover:visible group-hover:translate-y-2
+                 transition-all duration-500 ease-out border-none"
+        >
+          <div class="grid grid-cols-3 gap-10 px-12 py-10 text-gray-800 border-none">
+            <div class="border-none">
+              <h3 class="text-3xl font-bold text-slate-900 mb-4">Admission</h3>
+              <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0233-1152x1536.jpg"
+                alt="Admission" class="mb-4 w-full h-52 object-cover border-none transition transform hover:scale-105 duration-300"/>
+              <p class="text-xs leading-relaxed text-gray-700 mb-4">Join our community and start your journey today!</p>
+            </div>
 
-    {{-- Kiri: Gambar + Deskripsi --}}
-    <div class="border-none">
-      <h3 class="text-3xl font-bold text-slate-900 mb-4">Admission</h3>
-      <img
-        src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0233-1152x1536.jpg"
-        alt="Admission Building"
-        class="mb-4 w-full h-52 object-cover border-none"
-      />
-      <p class="text-xs leading-relaxed text-gray-700 mb-4">
-        Start your journey with us! Join a vibrant community and unlock your future with quality education and support.
-      </p>
-      <p class="font-semibold text-gray-800">Admission Intake this 2025</p>
-    </div>
+            <div class="border-none">
+              <h3 class="text-2xl font-bold text-slate-900 mb-4">Enrollment</h3>
+              <ul class="space-y-3 text-xs font-medium text-gray-700">
+                <li><a href="#" class="hover:text-orange-500">Discover Our Program</a></li>
+                <li><a href="#" class="hover:text-orange-500">Starts Today</a></li>
+              </ul>
+            </div>
 
-    {{-- Tengah: Enrollment --}}
-    <div class="border-none">
-      <h3 class="text-2xl font-bold text-slate-900 mb-4">Enrollment</h3>
-      <ul class="space-y-3 text-xs font-medium text-gray-700">
-        <li><a href="#" class="hover:text-orange-500 transition border-none">Discover Our Program</a></li>
-        <li><a href="#" class="hover:text-orange-500 transition border-none">What Students Say</a></li>
-        <li><a href="#" class="hover:text-orange-500 transition border-none">Starts Today</a></li>
-        <li><a href="#" class="hover:text-orange-500 transition border-none">Tuition Fee</a></li>
-      </ul>
-    </div>
-
-    {{-- Kanan: World Class Facility --}}
-    <div class="border-none">
-      <h3 class="text-2xl font-bold text-slate-900 mb-4">World Class Facility</h3>
-      <img
-        src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0211-1152x1536.jpg"
-        alt="World Class Facility"
-        class="mb-4 w-full h-52 object-cover border-none"
-      />
-      <p class="text-xs leading-relaxed text-gray-700 mb-4">
-        Experience top-tier learning environments designed to inspire innovation, excellence, and global standards.
-      </p>
-      <p class="font-semibold text-gray-800">Room Mock-Up Laboratory</p>
-    </div>
-
-  </div>
-</div>
-@endif
+            <div class="border-none">
+              <h3 class="text-2xl font-bold text-slate-900 mb-4">World Class Facility</h3>
+              <img src="https://tedjaindonesia.ac.id/wp-content/uploads/2025/04/IMG_0211-1152x1536.jpg"
+                alt="Facility" class="mb-4 w-full h-52 object-cover border-none transition transform hover:scale-105 duration-300"/>
+            </div>
+          </div>
+        </div>
+        @endif
 
       {{-- EVENTS MENU --}}
 @if ($menu['name'] === 'Events')

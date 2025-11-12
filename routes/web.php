@@ -14,6 +14,14 @@ Route::get('/study-program', function () {
     return view('study-program');
 })->name('study.program');
 
+Route::get('/study-progam/detail', function () {
+    return view('detail');
+})->name('detail');
+
+Route::get('/events/detail2', function () {
+    return view('event_detail2');
+})->name('event.detail2');
+
 Route::get('/facility', function () {
     return view('facility');
 })->name('facility');
